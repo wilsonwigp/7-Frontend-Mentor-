@@ -1,0 +1,100 @@
+/* 
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    # Front-end Style Guide
+## Layout
+The designs were created to the following widths:
+- Mobile: 375px
+- Desktop: 1440px
+## Typography
+### Body Copy
+- Font size: 15px
+*/
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+:root{
+/*Primary*/
+--Bright_orange: hsl(31, 77%, 52%);
+--Dark_cyan: hsl(184, 100%, 22%);
+--Very_dark_cyan: hsl(179, 100%, 13%);
+/*Neutral*/
+--Transparent_white:hsla(0, 0%, 100%, 0.75);/*Paragraphs*/
+--Very_light_gray: hsl(0, 0%, 95%)/*background, headings, buttons*/
+}
+
+body{
+    font-family: "Lexend Deca",sans-serif;
+    background: var(--Very_light_gray);
+    font-size: 15px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+.cont{
+    max-width: 960px;
+    margin:0 auto;
+}
+.container{
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    margin:16px;
+}
+.card{
+    padding:30px;
+}
+#card-1{
+background: var(--Bright_orange);
+}
+#card-2{
+background: var(--Dark_cyan);
+}
+#card-3{
+background: var(--Very_dark_cyan);
+}
+.subtitle{
+    font-family: "Big Shoulders Display", cursive;
+    color:var(--Very_light_gray);
+    text-transform: uppercase;
+    font-size: 30px;
+
+}
+.description{
+    color:var(--Transparent_white);
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+    padding:10px 20px;
+    border-radius: 20px;
+    background: var(--Very_light_gray);
+    margin-top:60px;
+    display:inline-block;
+    border:2px solid white;
+}
+#card-1 a{
+    color:var(--Bright_orange);
+}
+#card-2 a{
+    color:var(--Dark_cyan);
+}
+#card-3 a{
+    color:var(--Very_dark_cyan);
+}
+a:hover{
+    background-color: transparent;
+}
+#card-1 a:hover,#card-2 a:hover, #card-3 a:hover{
+    color:var(--Transparent_white);
+}
+@media(max-width:750px){
+    .container{
+        display:flex;
+        flex-direction: column;
+    }
+}
+@media(max-width:350px){
+    .container{
+        margin:8px;
+    }
+}
